@@ -38,8 +38,9 @@ public class SOCareersActivity extends Activity {
 
         //Get the message from intent
         Intent intent = getIntent();
-        String message = intent.getStringExtra("jobSkill");
-        refreshListView(message);
+        String messageSearchTerm = intent.getStringExtra("searchTerm");
+        String messageLocation = intent.getStringExtra("location");
+        refreshListView(messageSearchTerm,messageLocation);
     }
 
 
@@ -66,15 +67,21 @@ public class SOCareersActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
     **/
-    private void refreshListView(String urlSearchString){
+    private void refreshListView(String urlSearchTerm, String urlSearchLocation){
         setContentView(R.layout.activity_socareers);
         list = (ListView) findViewById(R.id.listView);
         //SOCRssService service = new SOCRssService(list);
-
-
-
         SOCRssService service = new SOCRssService(this);
-        service.execute(new String[]{"http://careers.stackoverflow.com/jobs/feed" + "?" + "searchTerm=" + urlSearchString});
+
+        if(urlSearchTerm != "" || urlSearchLocation != "")
+        {
+            service.execute(new String[]{"http://careers.stackoverflow.com/jobs/feed" + "?" + "searchTerm=" + urlSearchTerm + "&" + "location=" + urlSearchLocation});
+        }
+        else
+        {
+            service.execute(new String[]{"http://careers.stackoverflow.com/jobs/feed"});
+        }
+
 
     }
 

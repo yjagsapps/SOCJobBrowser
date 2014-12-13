@@ -20,19 +20,42 @@ public class SOSearchActivity extends Activity{
         setContentView(R.layout.activity_jobsearch);
     }
 
-    public void searchAllJobs(View view){
+    public void listAllJobs(View view){
         Intent  intent = new Intent(this,SOCareersActivity.class);
         String message = "";
-        EditText editTextJobSkill = (EditText) findViewById(R.id.TextViewJobSkill);
+
+        //EditText editTextJobSkill = (EditText) findViewById(R.id.TextViewJobSkill);
+        //try {
+        //
+        //    message = URLEncoder.encode(editTextJobSkill.getText().toString(),"UTF-8");
+        //}
+        //catch (UnsupportedEncodingException e){
+        //    Log.e("NOT OK","Some error");
+        //}
+
+        intent.putExtra("searchTerm", message);
+        intent.putExtra("location", message);
+        startActivity(intent);
+    }
+
+    public void searchJobs(View view){
+
+        Intent  intent = new Intent(this,SOCareersActivity.class);
+        String messageSearchTerm = "";
+        String messageLocation = "";
+        EditText editTextJobKeyword = (EditText) findViewById(R.id.TextViewJobKeyword);
+        EditText editTextJobLocation = (EditText) findViewById(R.id.TextViewJobLocation);
         try {
 
-            message = URLEncoder.encode(editTextJobSkill.getText().toString(),"UTF-8");
+            messageSearchTerm = URLEncoder.encode(editTextJobKeyword.getText().toString(),"UTF-8");
+            messageLocation = URLEncoder.encode(editTextJobLocation.getText().toString(),"UTF-8");
         }
         catch (UnsupportedEncodingException e){
             Log.e("NOT OK","Some error");
         }
 
-        intent.putExtra("jobSkill", message);
+        intent.putExtra("searchTerm", messageSearchTerm);
+        intent.putExtra("location", messageLocation);
         startActivity(intent);
 
     }
