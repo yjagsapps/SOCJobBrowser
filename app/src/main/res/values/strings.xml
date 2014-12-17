@@ -13,5 +13,8 @@
     <string name="title_activity_sosearch">SOC Job Browser</string>
     <string name="title_activity_socareersdetails">Job Details Activity</string>
 
+    <string name="source_attribution_text">Source:Stack Exchange Network</string>
+    <string name="source_attribution_url">http://careers.stackoverflow.com</string>
+
 
 </resources>
