@@ -1,4 +1,4 @@
-package com.android.yjagsapps.jobssynd;
+package com.yjagsapps.socbrowser;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,7 +8,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.android.yjagsapps.jobssynd.util.ConnectionDetector;
+import com.yjagsapps.socbrowser.R;
+import com.yjagsapps.socbrowser.util.ConnectionDetector;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;

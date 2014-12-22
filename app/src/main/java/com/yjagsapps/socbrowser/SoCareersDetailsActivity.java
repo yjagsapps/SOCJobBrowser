@@ -1,9 +1,11 @@
-package com.android.yjagsapps.jobssynd;
+package com.yjagsapps.socbrowser;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.webkit.WebView;
+
+import com.yjagsapps.socbrowser.R;
 
 /**
  * Created by Jags on 12/6/2014.

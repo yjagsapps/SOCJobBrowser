@@ -1,25 +1,15 @@
-package com.android.yjagsapps.jobssynd;
+package com.yjagsapps.socbrowser;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.database.DataSetObserver;
 //import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import com.android.yjagsapps.jobssynd.parser.DummyFeed;
-import com.android.yjagsapps.jobssynd.services.SOCRssService;
-import com.android.yjagsapps.jobssynd.util.Feed;
-import java.util.List;
-import  java.util.ArrayList;
+import com.yjagsapps.socbrowser.R;
+import com.yjagsapps.socbrowser.services.SOCRssService;
 
 
 public class SOCareersActivity extends Activity {

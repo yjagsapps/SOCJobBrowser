@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.yjagsapps.jobssynd" >
+    package="com.yjagsapps.socbrowser" >
 
     <!-- Internet Permission -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -15,7 +15,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name="com.android.yjagsapps.jobssynd.SOSearchActivity"
+            android:name="com.yjagsapps.socbrowser.SOSearchActivity"
             android:label="@string/title_activity_sosearch" >
 
             <intent-filter>
@@ -27,13 +27,13 @@
 
 
         <activity
-            android:name="com.android.yjagsapps.jobssynd.SOCareersActivity"
+            android:name="com.yjagsapps.socbrowser.SOCareersActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/title_activity_socareers" >
         </activity>
 
         <activity
-            android:name="com.android.yjagsapps.jobssynd.SoCareersDetailsActivity"
+            android:name="com.yjagsapps.socbrowser.SoCareersDetailsActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/title_activity_socareersdetails">
         </activity>

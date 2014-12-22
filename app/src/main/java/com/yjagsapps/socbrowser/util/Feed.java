@@ -1,4 +1,4 @@
-package com.android.yjagsapps.jobssynd.util;
+package com.yjagsapps.socbrowser.util;
 
 /**
  * Created by Jags on 12/2/2014.

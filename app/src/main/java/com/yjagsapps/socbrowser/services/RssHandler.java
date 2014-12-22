@@ -1,4 +1,4 @@
-package com.android.yjagsapps.jobssynd.services;
+package com.yjagsapps.socbrowser.services;
 
 /**
  * Created by Jags on 12/3/2014.
@@ -13,7 +13,7 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import com.android.yjagsapps.jobssynd.util.Job;
+import com.yjagsapps.socbrowser.util.Job;
 
 
 

@@ -1,4 +1,4 @@
-package com.android.yjagsapps.jobssynd.services;
+package com.yjagsapps.socbrowser.services;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -7,17 +7,15 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.yjagsapps.jobssynd.JobListAdaptor;
-import com.android.yjagsapps.jobssynd.R;
-import com.android.yjagsapps.jobssynd.SoCareersDetailsActivity;
-import com.android.yjagsapps.jobssynd.util.Job;
-import com.android.yjagsapps.jobssynd.services.RssHandler;
+import com.yjagsapps.socbrowser.JobListAdaptor;
+import com.yjagsapps.socbrowser.R;
+import com.yjagsapps.socbrowser.SoCareersDetailsActivity;
+import com.yjagsapps.socbrowser.util.Job;
 
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
@@ -25,7 +23,6 @@ import org.xml.sax.XMLReader;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.xml.parsers.ParserConfigurationException;

@@ -1,4 +1,4 @@
-package com.android.yjagsapps.jobssynd.util;
+package com.yjagsapps.socbrowser.util;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

@@ -1,9 +1,11 @@
-package com.android.yjagsapps.jobssynd;
+package com.yjagsapps.socbrowser;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.yjagsapps.socbrowser.R;
 
 // This class is by Jags 1
 public class InitActivity extends ActionBarActivity {

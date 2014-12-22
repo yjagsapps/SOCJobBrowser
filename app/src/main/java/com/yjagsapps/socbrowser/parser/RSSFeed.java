@@ -1,36 +1,43 @@
-package com.android.yjagsapps.jobssynd.parser;
-
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Vector;
-import com.android.yjagsapps.jobssynd.util.Feed;
+package com.yjagsapps.socbrowser.parser;
 
 /**
  * Created by Jags on 12/2/2014.
  */
-public class DummyFeed implements Serializable {
+import java.io.Serializable;
+import java.util.List;
+import java.util.Vector;
+
+/**
+ * RSSFeed object which is written to by the DOMParser, containing
+ * different RSSItem objects and the ability to add another item.
+ * Also allows for finding the total number of items in the feed
+ * if unknown already.
+ *
+ * @author Isaac Whitfield
+ * @version 06/08/2013
+ */
+public class RSSFeed implements Serializable {
 
     // Create a new item count
     private int itemCount = 0;
     // Create a new item list
-    private List<Feed> itemList;
+    private List<RSSItem> itemList;
     // Serializable ID
     private static final long serialVersionUID = 1L;
 
-    public DummyFeed(){
+    public RSSFeed() {
         // Initialize the item list
-        itemList = new Vector<Feed>(0);
+        itemList = new Vector<RSSItem>(0);
     }
 
-    public void addItem(Feed item) {
+    void addItem(RSSItem item) {
         // Add an item to the Vector
         itemList.add(item);
         // Increment the item count
         itemCount++;
     }
 
-    public Feed getItem(int position) {
+    public RSSItem getItem(int position) {
         // Return the item at the chosen position
         return itemList.get(position);
     }
@@ -39,4 +46,5 @@ public class DummyFeed implements Serializable {
         // Return the number of items in the feed
         return itemCount;
     }
+
 }

@@ -1,4 +1,4 @@
-package com.android.yjagsapps.jobssynd;
+package com.yjagsapps.socbrowser;
 
 import android.widget.BaseAdapter;
 import android.view.LayoutInflater;
@@ -7,11 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.android.yjagsapps.jobssynd.parser.DummyFeed;
-import com.android.yjagsapps.jobssynd.parser.RSSFeed;
+import com.yjagsapps.socbrowser.R;
+import com.yjagsapps.socbrowser.parser.DummyFeed;
+import com.yjagsapps.socbrowser.parser.RSSFeed;
 
-import com.android.yjagsapps.jobssynd.util.Feed;
-import java.util.List;
 /**
  * Created by Jags on 12/2/2014.
  */
